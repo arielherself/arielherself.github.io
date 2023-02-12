@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Ariel&#39;s Blog</title>
+  
+  <subtitle>Where great ideas are absent</subtitle>
+  <link href="https://arielherself.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://arielherself.github.io/"/>
+  <updated>2023-02-12T12:00:47.425Z</updated>
+  <id>https://arielherself.github.io/</id>
+  
+  <author>
+    <name>Ariel Durov</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>陈纪修习题11.2</title>
+    <link href="https://arielherself.github.io/2023/02/12/%E9%99%88%E7%BA%AA%E4%BF%AE%E4%B9%A0%E9%A2%9811-2/"/>
+    <id>https://arielherself.github.io/2023/02/12/%E9%99%88%E7%BA%AA%E4%BF%AE%E4%B9%A0%E9%A2%9811-2/</id>
+    <published>2023-02-12T09:46:54.000Z</published>
+    <updated>2023-02-12T12:00:47.425Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>证明定理$11.1.1$：距离满足正定性、对称性和三角不等式。</li></ol><p>证 只证三角不等式。式两端平方，由</p><p>$$<br>\left&lt;\boldsymbol x-\boldsymbol z,\boldsymbol x-\boldsymbol z\right&gt;&#x3D;\left&lt;\boldsymbol x-\boldsymbol y,\boldsymbol x-\boldsymbol y\right&gt;+2\left&lt;\boldsymbol x-\boldsymbol y,\boldsymbol y-\boldsymbol z\right&gt;+\left&lt;\boldsymbol y-\boldsymbol z,\boldsymbol y-\boldsymbol z\right&gt;<br>$$</p><p>及$\mathrm{Schwarz}$不等式，结论得证。$\square$</p><hr><ol start="2"><li>证明：若$\mathbb R^n$中的点列$\{\boldsymbol x_n\}$收敛，则其极限是唯一的。</li></ol><p>证 若$\boldsymbol x_n\to\boldsymbol \xi,\ \boldsymbol x_n\to\boldsymbol\zeta$，则对任意$\varepsilon$，当$n$充分大时成立</p><p>$$<br>|\boldsymbol\xi-\boldsymbol\zeta|\leqslant|\boldsymbol x_n-\boldsymbol\xi|+|\boldsymbol x_n-\boldsymbol\zeta|\lt\varepsilon<br>$$</p><p>由$\varepsilon$的任意性，$\boldsymbol \xi&#x3D;\boldsymbol \zeta$。$\square$</p><hr><ol start="3"><li>设$\mathbb R^n$中的点列$\{\boldsymbol x_k\}$和${\boldsymbol y_k}$收敛，证明对任何实数$\alpha,\beta$，成立</li></ol><p>$$<br>\lim_{k\to\infty}(\alpha\boldsymbol x_k+\beta\boldsymbol y_k)&#x3D;\alpha\lim_{k\to\infty}\boldsymbol x_k+\beta\lim_{k\to\infty}\boldsymbol y_k.<br>$$</p><p>证 </p><p>$$<br>\left|(\alpha\boldsymbol x_k+\beta\boldsymbol y_k)-\left(\alpha\lim_{k\to\infty}\boldsymbol x_k+\beta\lim_{k\to\infty}\boldsymbol y_k\right)\right|\leqslant|\alpha|\left|\boldsymbol x_k-\lim_{k\to\infty}\boldsymbol x_k\right|+|\beta|\left|\boldsymbol y_k-\lim_{k\to\infty}\boldsymbol y_k\right|\to0.\qquad\square<br>$$</p><hr><ol start="4"><li><p>求下列$\mathbb R^2$中子集的内部、边界与闭包：</p><p>（1）$S&#x3D;\{(x,y)|x\gt0,y\ne0\}$；</p><p>（2）$S&#x3D;\{(x,y)|0\lt x^2+y^2\leqslant1\}$；</p><p>（3）$S&#x3D;\left\{(x,y)|0\lt x\leqslant1,y&#x3D;\sin\dfrac1x\right\}$。</p></li></ol><p>解 （1）$S^\circ&#x3D;S,\ \partial S&#x3D;\{(x,y)|x&#x3D;0\vee(y&#x3D;0\land x\geqslant0)\},\ \bar S&#x3D;\{(x,y)|x\geqslant0\}$；</p><p>（2）$S^\circ&#x3D;\{(x,y)|0\lt x^2+y^2\lt1\},\ \partial S&#x3D;\{(x,y)| x^2+y^2\in\{0,1\}\},\ \bar S&#x3D;\{(x,y)|x^2+y^2\leqslant1\}$；</p><p>（3）$S^\circ&#x3D;\varnothing,\ \partial S&#x3D;S\cup \{(0,y)|y\in[-1,1]\}, \bar S&#x3D;S\cup \{(0,y)|y\in[-1,1]\}$。$\square$</p><hr><ol start="5"><li><p>求下列点集的全部聚点：</p><p>（1）$S&#x3D;\left\{(-1)^k\left.\dfrac k{k+1}\right|k&#x3D;1,2,\cdots\right\}$；</p><p>（2）$S&#x3D;\left\{\left(\left.\cos\dfrac{2k\pi}{5},\sin\dfrac{2k\pi}{5}\right)\right|k&#x3D;1,2,\cdots\right\}$；</p><p>（3）$S&#x3D;\{(x,y)|(x^2+y^2)(y^2-x^2+1)\leqslant0\}$。</p></li></ol><p>解 （1）$1,-1$；（2）这是一个有限集，没有聚点；（3）$\{(x,y)|y^2-x^2+1\leqslant0\}$。$\square$</p><hr><ol start="6"><li>证明定理$11.1.3$：$\boldsymbol x$是点集$S$（$\subset\mathbb R^n$）的聚点的充分必要条件是：存在$S$中的点列$\{\boldsymbol x_k\}$，满足$\boldsymbol x_k\ne\boldsymbol x(k&#x3D;1,2,\cdots)$，且$\displaystyle \lim_{k\to\infty}\boldsymbol x_k&#x3D;\boldsymbol x$。</li></ol><p>证 必要性：因为$\boldsymbol x\in S’$，所以$\forall \delta\gt0,\ \exists \boldsymbol y\in S:0\lt||\boldsymbol x-\boldsymbol y||\lt\delta$。取$\delta_1:&#x3D;1$，得一$\boldsymbol x_1$；再取$\delta_2:&#x3D;\dfrac12||\boldsymbol x-\boldsymbol x_1||$，得一$\boldsymbol x_2$。以此类推，取$\delta_n:&#x3D;\dfrac12||\boldsymbol x-\boldsymbol x_{n-1}||$，得一$\boldsymbol x_n$。于是得满足条件点列。</p><p>充分性：由极限的定义，$\forall\varepsilon\gt0$，有无数点在$\boldsymbol x$的$\varepsilon-$邻域内，故$\boldsymbol x\in S’$。$\square$</p><hr><ol start="7"><li>设$U$是$\mathbb R^2$上的开集，是否$U$的每个点都是它的聚点？对于$\mathbb R^2$中的闭集又如何呢？</li></ol><p>解 （1）是，因为内点都是聚点；（2）否，还可能有孤立的边界点。$\square$</p><hr><ol start="8"><li>证明$S\subset \mathbb R^n$的所有内点组成的点集$S^\circ$必是开集。</li></ol><p>证 当$S\in\{\varnothing,\mathbb R^n\}$时结论平凡。其他情况下，假设$S^\circ$不是开集，则存在$\boldsymbol y\in S$是$S$的孤立边界点，此时$\boldsymbol y$的某邻域$T\in U^\circ(\boldsymbol y)$满足$T\cap S^\circ&#x3D;\varnothing$和$T\subset S$。这说明$T$中每个点都属于$S^\circ$，矛盾。$\square$</p><hr><ol start="9"><li>证明$S\subset \mathbb R^n$的闭包$\bar S&#x3D;S\cup S’$必是闭集。</li></ol><p>证 先证明$S’’\subset S’$。对任意$\boldsymbol x\in S’’$，$\forall\delta\gt0,\ \exists \boldsymbol y\in S’:||\boldsymbol x-\boldsymbol y||\lt\delta$，同时$\exists\boldsymbol z_1,\boldsymbol z_2,\cdots\in S:||\boldsymbol y-\boldsymbol z_n||\lt\delta$，这说明$||\boldsymbol x-\boldsymbol z_n||\lt2\delta$，于是$\boldsymbol x\in S’$。</p><p>对任意$\boldsymbol x\in(S\cup S’)’$，$\forall \delta\gt0,\ \exists\boldsymbol y_1,\boldsymbol y_2,\cdots\in S\cup S’:||\boldsymbol y-\boldsymbol x||\lt\delta$，若$S$中有无数个$\boldsymbol y_n$，则$\boldsymbol x\in S’$；若$S’$中有无数个$\boldsymbol y_n$，则$\boldsymbol x\in S’’\subset S’$。总之，$\boldsymbol x\in S’\subset(S\cup S’)$。$\square$</p><hr><ol start="10"><li>设$E,F\subset\mathbb R^n$。若$E$为开集，$F$为闭集，证明：$E-F$为开集，$F-E$为闭集。</li></ol><p>证 若$E-F$是闭集，那么$(E-F)\cup F&#x3D;E$是闭集，矛盾。因此$E-F$是开集。</p><p>若$F-E$是开集，那么$(F-E)\cup E&#x3D;F$是开集，矛盾。因此$F-E$是闭集。$\square$</p><hr><ol start="11"><li>证明$\mathrm{Cantor}$闭区域套定理。</li></ol><p>证 沿用闭矩形套定理的证明思路，可证对$\mathbb R^n$中的闭盒序列$\displaystyle D_k:&#x3D;\prod_{i&#x3D;1}^n[a_{k_i},b_{k_i}]$成立类似的闭盒套定理。</p><p>对每个$S_k$，取两闭盒满足$A_k\subset S_k\subset B_k$，由闭盒套定理有唯一点满足对所有$k$成立$\boldsymbol\xi \in A_k\subset S_k$。存在性得证。</p><p>又因为$\boldsymbol \xi\in B_k$，对$B_k$应用闭盒套定理得只有$\boldsymbol\xi$满足对所有$k$成立$\boldsymbol \xi\in B_k$。进而也只有$\boldsymbol \xi$满足对所有$k$成立$\boldsymbol \xi\in S_k$。唯一性得证。$\square$</p><hr><ol start="12"><li>举例说明：满足$\displaystyle \lim_{k\to\infty}|\boldsymbol x_{k+1}-\boldsymbol x_k|&#x3D;0$的点列$\{\boldsymbol x_k\}$不一定收敛。</li></ol><p>证 $x_n:&#x3D;\ln x$即为一例。$\square$</p><hr><ol start="13"><li>设$E,F\subset\mathbb R^n$为紧集，证明$E\cap F$和$E\cup F$为紧集。</li></ol><p>证 设$E$的一个开覆盖为$\{\mathscr E_k\}$，$F$的一个开覆盖为$\{\mathscr F_k\}$，则$\{\mathscr E_k\}\cup\{\mathscr F_k\}$为$E\cup F$的一个开覆盖。$\{\mathscr E_k\}$有有限子覆盖$\{\mathscr E_{k_m}\}$，$\{\mathscr F_k\}$有有限子覆盖$\{\mathscr F_{k_m}\}$，于是$\{\mathscr E_{k_m}\}\cup\{\mathscr F_{k_m}\}$为$\{\mathscr E_k\}\cup\{\mathscr F_k\}$的有限子覆盖。$\square$</p><hr><ol start="14"><li>用定义证明点集$S:&#x3D;\{0\}\cup\left\{\left.\dfrac1k\right|k&#x3D;1,2,\cdots\right\}$是$\mathbb R$中的紧集。</li></ol><p>证 对每个$S$的开覆盖$\{\mathscr S_k\}$，其至少有一个元素满足$0\in \mathfrak S\in\{\mathscr S_k\}$。显然，存在$U^\circ(0,\delta)\subset\mathfrak S$，于是当$k$充分大时总有$\dfrac1k\in\mathfrak S$，于是找到了有限子覆盖。$\square$</p><hr><ol start="15"><li>应用$\mathrm{Heine-Borel}$定理证明：$\mathbb R^n$上有界无限点集必有聚点。</li></ol><p>证 若该点集（记作$S$）有内点，则结论平凡。若无内点，则所有点为边界点，故$S$是有界闭集。假设$S$没有聚点，则$S$中的所有点都是孤立边界点。此时取$S$的这样一个开覆盖，其由$S$中每个点的邻域组成，且这些邻域中只有那个点是$S$中的点。由$\mathrm{Heine-Borel}$定理知有有限子覆盖，但去掉覆盖中的任何一个集合都会使一个点无法被覆盖，矛盾。因此$S$一定有聚点。$\square$</p>]]></content>
+    
+    
+    <summary type="html">陈纪修习题11.2</summary>
+    
+    
+    
+    
+    <category term="数分" scheme="https://arielherself.github.io/tags/%E6%95%B0%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Euclid空间上的闭开集</title>
+    <link href="https://arielherself.github.io/2023/02/12/Euclid%E7%A9%BA%E9%97%B4%E4%B8%8A%E7%9A%84%E9%97%AD%E5%BC%80%E9%9B%86/"/>
+    <id>https://arielherself.github.io/2023/02/12/Euclid%E7%A9%BA%E9%97%B4%E4%B8%8A%E7%9A%84%E9%97%AD%E5%BC%80%E9%9B%86/</id>
+    <published>2023-02-12T07:42:07.000Z</published>
+    <updated>2023-02-12T12:04:47.122Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>命题：$\mathrm{Euclid}$空间$\mathbb{R}^n$上的闭开集只有$\varnothing$和$\mathbb R^n$。</strong></p><hr><p>证明：假设另一个闭开集$S$存在，则成立性质：</p><ol><li><p>$S$的聚点一定是其内点，且内点一定是聚点；</p></li><li><p>$\mathbb R^n$中没有$S$的孤立（边界）点；</p></li><li><p>$\mathbb R^n$中没有$S$的非孤立边界点，否则它是$S$的聚点，与性质1矛盾；</p></li><li><p>$\mathbb R^n$中至少存在S的一个内点和一个外点（若$\boldsymbol x\in\mathbb R^n-S$不是外点，就是边界点，与性质2和3矛盾）。</p></li></ol><p>由性质4，记$S$的一个外点为$\boldsymbol y$，则由于至少存在一个内点$\boldsymbol x_0$，所以集合$D:&#x3D;\{||\boldsymbol y-\boldsymbol x||:\boldsymbol x\in S,||\boldsymbol y-\boldsymbol x||\leqslant||\boldsymbol y-\boldsymbol x_0||\}$有界，由确界定理有下确界$\ell:&#x3D;\inf D\in(0,+\infty)$。作球面$P:&#x3D;\{\boldsymbol x\in\mathbb R^n:||\boldsymbol y-\boldsymbol x||&#x3D;\ell\}$，任取$\boldsymbol p\in P$，若$\boldsymbol p\in S$，则由于球中无$S$的点，所以$\boldsymbol p$是$S$的边界点，与性质2和3矛盾；若$\boldsymbol p\notin S$，则由下确界的性质成立$\forall\varepsilon\gt0,\ \exists \boldsymbol x\in S:||\boldsymbol y-\boldsymbol x||\lt\ell+\varepsilon$，这说明$\boldsymbol p$是$S$的聚点，进而是内点（性质1），与$\boldsymbol p\notin S$矛盾。故假设不成立，命题得证。$\square$</p>]]></content>
+    
+    
+    <summary type="html">Euclid空间上的闭开集（Clopen Set）讨论。</summary>
+    
+    
+    
+    
+    <category term="数分" scheme="https://arielherself.github.io/tags/%E6%95%B0%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>二阶常系数齐次线性微分方程通解推导</title>
+    <link href="https://arielherself.github.io/2023/02/11/%E4%BA%8C%E9%98%B6%E5%B8%B8%E7%B3%BB%E6%95%B0%E9%BD%90%E6%AC%A1%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E9%80%9A%E8%A7%A3%E6%8E%A8%E5%AF%BC/"/>
+    <id>https://arielherself.github.io/2023/02/11/%E4%BA%8C%E9%98%B6%E5%B8%B8%E7%B3%BB%E6%95%B0%E9%BD%90%E6%AC%A1%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E9%80%9A%E8%A7%A3%E6%8E%A8%E5%AF%BC/</id>
+    <published>2023-02-11T13:34:53.000Z</published>
+    <updated>2023-02-11T15:02:35.428Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>问题：求$f’’(x)+pf’(x)+qf(x)&#x3D;0$的通解。</strong></p><hr><p>[一] 当$p^2-4q\gt0$时，方程$\lambda^2+p\lambda+q&#x3D;0$有两互异实根$\lambda_1,\lambda_2$，同时$\displaystyle -\frac1{\lambda_1},-\frac1{\lambda_2}$是$q\mu^2-p\mu+1&#x3D;0$的解，记为$\mu_1,\mu_2$。由于</p><p>$$<br>\left(e^{\mu qx}(f(x)+\mu f’(x))\right)’&#x3D;e^{\mu qx}\cdot(f’’(x)+pf’(x)+qf(x))\equiv0,<br>$$</p><p>所以</p><p>$$<br>f(x)+\mu_1f’(x)&#x3D;C_1’e^{-\mu_1 qx},\qquad(1)\\<br>f(x)+\mu_2f’(x)&#x3D;C_2’e^{-\mu_2qx}.\qquad(2)<br>$$</p><p>故</p><p>$$<br>(1)-\frac{\mu_1}{\mu_2}(2)\Rightarrow\frac{\mu_2-\mu_1}{\mu_2}f(x)&#x3D;C_1’e^{-\mu_1qx}-\frac{\mu_1}{\mu_2}C_2’e^{-\mu_2qx}.<br>$$</p><p>又因为$-\mu_1q&#x3D;\dfrac q{\lambda_1}&#x3D;-\lambda_1-p&#x3D;\lambda_2$，所以</p><p>$$<br>f(x)&#x3D;\frac{\mu_2}{\mu_2-\mu_1}C_1’e^{\lambda_2x}-\frac{\mu_1}{\mu_2-\mu_1}C_2’e^{\lambda_1x}.<br>$$</p><p>记$C_1:&#x3D;-\dfrac{\mu_1}{\mu_2-\mu_1}C_2’$，$C_2:&#x3D;\dfrac{\mu_2}{\mu_2-\mu_1}C_1’$，即得</p><p>$$<br>\boxed{f(x)&#x3D;C_1e^{\lambda_1x}+C_2e^{\lambda_2x}.}<br>$$</p><hr><p>[二] 当$p^2-4q&#x3D;0$时，由$(1)$式得</p><p>$$<br>e^{\mu qx}(f(x)+\mu f’(x))&#x3D;C_1’.<br>$$</p><p>又因为$q\mu^2&#x3D;1$，所以</p><p>$$<br>e^{\mu qx}(f(x)+\mu f’(x))&#x3D;\frac{\mathrm d}{\mathrm dx}(\mu e^{\frac1\mu x}f(x)).<br>$$</p><p>故$\mu e^{\frac1\mu x}f(x)&#x3D;C_1’x+C_2’$。由$-\dfrac{1}\mu&#x3D;\lambda$得</p><p>$$<br>-\frac1\lambda e^{-\lambda x}f(x)&#x3D;C_1’x+C_2’,<br>$$</p><p>即</p><p>$$<br>f(x)&#x3D;-\lambda C_1’xe^{\lambda x}-\lambda C_2’e^{\lambda x}.<br>$$</p><p>记$C_1:&#x3D;-\lambda C_1’$，$C_2:&#x3D;-\lambda C_2’$，即得</p><p>$$<br>\boxed{f(x)&#x3D;C_1 xe^{\lambda x}+C_2e^{\lambda x}.}<br>$$</p><hr><p>[三] 当$p^2-4q\lt0$时证明类似。$\square$</p><h2 id="与课本上证明的区别"><a href="#与课本上证明的区别" class="headerlink" title="与课本上证明的区别"></a>与课本上证明的区别</h2><p>课本上给出的证明实际是依赖于线性代数的理论，将问题简化为求出方程的两个特解。本证没有使用相关知识，只是用到了“导数为$0$，则函数为常值函数”一条命题。（情况[三]还需用到$\mathrm{Euler}$公式。）</p>]]></content>
+    
+    
+    <summary type="html">一个（几乎）只需要用到高中数学的方法。</summary>
+    
+    
+    
+    
+    <category term="数分" scheme="https://arielherself.github.io/tags/%E6%95%B0%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数项级数的19种判别法整理</title>
+    <link href="https://arielherself.github.io/2023/02/11/%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%8419%E7%A7%8D%E5%88%A4%E5%88%AB%E6%B3%95%E6%95%B4%E7%90%86/"/>
+    <id>https://arielherself.github.io/2023/02/11/%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%8419%E7%A7%8D%E5%88%A4%E5%88%AB%E6%B3%95%E6%95%B4%E7%90%86/</id>
+    <published>2023-02-11T11:19:49.000Z</published>
+    <updated>2023-02-11T11:36:59.848Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、正项级数"><a href="#一、正项级数" class="headerlink" title="一、正项级数"></a>一、正项级数</h1><ol><li><p>部分和有界，级数收敛，否则发散；</p></li><li><p>$\mathrm{Cauchy}$收敛原理；</p></li><li><p>根式判别法：$\displaystyle r:&#x3D;\overline{\lim_{n\to\infty}}\phantom{\sqrt {}}^n\sqrt n$。$r\gt1$发散，$r\lt1$收敛；</p></li><li><p>比式判别法：若$\displaystyle \overline{\lim_{n\to\infty}}\frac{a_{n+1}}{a_n}\lt1$，收敛；若$\displaystyle \underset {n\to\infty}{\underline{\lim}}\frac{a_{n+1}}{a_n}\gt1$，发散；</p></li><li><p>$\mathrm{Raabe}$判别法：$\displaystyle r:&#x3D;\lim_{n\to\infty}n\left(\frac{a_n}{a_{n+1}}-1\right)$。$r\gt1$收敛，$r\lt1$发散；</p></li><li><p>$\mathrm{Bertrand}$判别法：$\displaystyle r:&#x3D;\lim_{n\to\infty}\ln n\left(n\left(\frac{a_n}{a_{n+1}}-1\right)-1\right)$。$r\gt1$收敛，$r\lt1$发散；</p></li><li><p>对数判别法1：$\displaystyle r:&#x3D;\lim_{n\to\infty}\frac{\ln(1&#x2F;a_n)}{\ln n}$。$r\gt1$收敛，$r\lt1$发散；</p></li><li><p>对数判别法2：$\displaystyle r:&#x3D;\lim_{n\to\infty}\frac{\ln(1&#x2F;na_n)}{\ln\ln n}$，$r\gt1$收敛，$r\lt1$发散；</p></li><li><p>积分判别法，以及$\{n_k\}\nearrow\infty$，$\displaystyle\sum\int_{n_{k-1}}^{n_k}f(x)\mathrm dx$与$\displaystyle \int_{n_0}^{+\infty}f(x)\mathrm dx$同敛散；</p></li><li><p>比较判别法及其极限形式（$0$判断收敛，$+\infty$判断发散性）；</p></li><li><p>子列判别法：部分和子列收敛，则级数收敛；</p></li></ol><h1 id="二、单调-searrow-正项级数"><a href="#二、单调-searrow-正项级数" class="headerlink" title="二、单调$\searrow$正项级数"></a>二、单调$\searrow$正项级数</h1><ol start="12"><li><p>$\mathrm{Cauchy}$凝聚判别法：$\sum a_n$与$\sum2^na_{2^n}$同敛散；</p></li><li><p>$\mathrm{Sapagof}$判别法：$a_n\to0\Leftrightarrow\sum(1-\frac{a_n}{a_{n+1}})$发散；</p></li><li><p>$\mathrm{Abel-Pringsheim}$定理：$a_n\searrow0$，若$\sum a_n$收敛则$na_n\to0$；</p></li><li><p>$\mathrm{Lobachevskii}$判别法：$a_n\searrow0$，则$\sum a_n$与$\sum p_m2^{-m}$同敛散，其中$p_m:&#x3D;\max\{n|a_n\geqslant2^{-m}\}$；</p></li><li><p>$\lambda\leqslant1$，$\sum a_n$与$\sum\frac{a_n}{S_n^\lambda}$同敛散；</p></li></ol><h1 id="三、任意项级数"><a href="#三、任意项级数" class="headerlink" title="三、任意项级数"></a>三、任意项级数</h1><ol start="17"><li><p>交错级数判别法：$a_n\searrow0$则$\sum(-1)^{n+1}a_n$收敛；</p></li><li><p>$\mathrm{A-D}$判别法；</p></li><li><p>绝对收敛判别法。</p></li></ol>]]></content>
+    
+    
+    <summary type="html">汇总一些最有实用价值的判别法。</summary>
+    
+    
+    
+    
+    <category term="数分" scheme="https://arielherself.github.io/tags/%E6%95%B0%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>裴礼文例5.3.43</title>
+    <link href="https://arielherself.github.io/2023/02/10/%E8%A3%B4%E7%A4%BC%E6%96%87%E4%BE%8B5-3-43/"/>
+    <id>https://arielherself.github.io/2023/02/10/%E8%A3%B4%E7%A4%BC%E6%96%87%E4%BE%8B5-3-43/</id>
+    <published>2023-02-10T10:17:33.000Z</published>
+    <updated>2023-02-10T10:42:34.768Z</updated>
+    
+    <content type="html"><![CDATA[<p>设$\displaystyle f(x)&#x3D;\sum_{n&#x3D;1}^\infty\frac1{n^2\ln(1+n)}x^n$，试证：</p><ol><li><p>$f(x)$在$[-1,1]$上连续；</p></li><li><p>$f(x)$在$x&#x3D;-1$处可导；</p></li><li><p>$\displaystyle \lim_{x\to1-}f’(x)&#x3D;+\infty$；</p></li><li><p>$f(x)$在$x&#x3D;1$处不可导。</p></li></ol><hr><ol><li><p>由$\displaystyle \overline{\lim_{n\to\infty}}\sqrt{\frac{1}{n^2\ln(1+n)}}&#x3D;1$，且$\displaystyle \frac{1}{n^2\ln(1+n)}\lt\frac1{n^2}$，因此$f\in C[-1,1]$。</p></li><li><p>$\displaystyle \left(\frac1{n^2\ln(1+n)}x^n\right)’&#x3D;\frac1{n\ln(1+n)}x^{n-1}$，式右端构成的级数在$[-1,0]$一致收敛，故$f$在$-1$处存在右导数。</p></li><li><p>注意到$f$单调$\nearrow$，故取子列</p><p>$$<br>\begin{align*}<br>f’\left(1-\frac{1}{N-1}\right)&amp;&#x3D;\left(\sum_{n&#x3D;1}^N+\sum_{n&#x3D;N+1}^\infty\right)\frac{1}{n\ln(1+n)}\left(1-\frac{1}{N-1}\right)^{n-1}\\<br>&amp;\gt\sum_{n&#x3D;1}^N\frac{1}{n\ln(1+n)}\left(1-\frac{1}{n-1}\right)^{n-1}<br>\end{align*}<br>$$</p><p>于是</p><p>$$<br>\lim_{N\to\infty}f’\left(1-\frac1{N-1}\right)\geqslant\sum_{n&#x3D;1}^\infty\frac{1}{n\ln(1+n)}\left(1-\frac{1}{n-1}\right)^{n-1}<br>$$</p><p>又因$\displaystyle\frac{1}{n\ln(1+n)}\left(1-\frac{1}{n-1}\right)^{n-1}\sim\frac{1}{en\ln(1+n)}$，所以</p><p>$$<br>\lim_{x\to1-}f’(x)&#x3D;\lim_{N\to\infty}f’\left(1-\frac1{N-1}\right)&#x3D;+\infty.<br>$$</p></li><li><p>由第3问结论，成立</p><p>$$<br>\lim_{x\to1-}\frac{f(x)-f(1)}{x-1}&#x3D;\lim_{x\to1-}f’(\xi)&#x3D;+\infty.<br>$$</p><p>故$1$处不可导。</p></li></ol>]]></content>
+    
+    
+    <summary type="html">裴礼文例5.3.43</summary>
+    
+    
+    
+    
+    <category term="数分" scheme="https://arielherself.github.io/tags/%E6%95%B0%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>裴礼文例5.3.46</title>
+    <link href="https://arielherself.github.io/2023/02/10/%E8%A3%B4%E7%A4%BC%E6%96%87%E4%BE%8B5-3-46/"/>
+    <id>https://arielherself.github.io/2023/02/10/%E8%A3%B4%E7%A4%BC%E6%96%87%E4%BE%8B5-3-46/</id>
+    <published>2023-02-10T09:57:03.000Z</published>
+    <updated>2023-02-10T10:15:29.791Z</updated>
+    
+    <content type="html"><![CDATA[<p>设函数$f:\mathbb{N}\to\mathbb{R}$，$a_n(n\in\mathbb{N})$为实数，且对于充分大的$x$，有</p><p>$$<br>f(x)&#x3D;a_0+\frac{a_1}x+\frac{a_2}{x^2}+\cdots+\frac{a_n}{x^n}+\cdots.<br>$$</p><p>试证：$\displaystyle \sum_{n&#x3D;1}^\infty f(n)$收敛的充要条件是$a_0&#x3D;a_1&#x3D;0.$</p><hr><p>（充分性）</p><p>$$<br>\frac{\dfrac{a_2}{n^2}+\cdots}{\dfrac{1}{n^2}}\to a_2\in\mathbb{R}.<br>$$</p><p>（必要性）由$\sum f(n)$收敛知$\forall\varepsilon\gt0,\exists N\gt0,\forall n\gt N:|f(x)-f_n(x)|\lt\varepsilon$。此式对$x\to\infty$取极限得$\displaystyle \left|\lim_{x\to\infty}f(x)-a_0\right|\lt\varepsilon$。由$\varepsilon$任意性得$\displaystyle \lim_{x\to\infty}f(x)&#x3D;a_0$。于是</p><p>$$<br>\frac{\dfrac{a_1}{n}+\dfrac{a_2}{n^2}+\cdots}{\dfrac{1}{n}}\to a_1\in\mathbb{R},<br>$$</p><p>若$a_1\ne0$，则$\sum f(n)$发散，矛盾。故得证。</p>]]></content>
+    
+    
+    <summary type="html">裴礼文例5.3.46</summary>
+    
+    
+    
+    
+    <category term="数分" scheme="https://arielherself.github.io/tags/%E6%95%B0%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>交大2023考研数分</title>
+    <link href="https://arielherself.github.io/2023/02/10/%E4%BA%A4%E5%A4%A72023%E8%80%83%E7%A0%94%E6%95%B0%E5%88%86/"/>
+    <id>https://arielherself.github.io/2023/02/10/%E4%BA%A4%E5%A4%A72023%E8%80%83%E7%A0%94%E6%95%B0%E5%88%86/</id>
+    <published>2023-02-10T06:45:57.000Z</published>
+    <updated>2023-02-10T10:13:09.532Z</updated>
+    
+    <content type="html"><![CDATA[<p>一、判断每题5分，共25分。</p><ol><li><p>存在处处不连续但有界的函数。</p><p><em>解</em> 正确。例：$\mathrm{Dirichlet}$函数。</p></li><li><p>$\mathrm{Riemann}$可积函数一定存在原函数。</p><p><em>解</em> 错误。反例：$f(x):&#x3D;\mathrm{sgn}\thinspace x$。</p></li><li><p>级数$\displaystyle{\sum_{n&#x3D;1}^\infty a_n}$收敛，则任意加括号，只要不改变其先后次序，所得的新级数仍然收敛。</p><p><em>解</em> 正确。因为收敛数列的子列收敛于相同极限。</p></li><li><p>函数$|f|$在$[a,b]$上$\mathrm{Riemann}$可积，则函数$f$在$[a,b]$上也$\mathrm{Riemann}$可积。</p><p><em>解</em> 错误。反例：$f(x):&#x3D;\begin{cases}1,\quad&amp;x\in\mathbb Q\\-1,\quad&amp;x\notin\mathbb Q\end{cases}$。</p></li><li><p>（多元函数没学，跳过）</p></li></ol><hr><p>二、（20分）（多元函数没学，跳过）</p><hr><p>三、（20分）设函数$f(x)$在区间$[0,1]$可导，其值域也是区间$[0,1]$，且存在$0\lt\theta\lt1$，使得$|f’(x)|\leqslant\theta$。证明：$f(x)&#x3D;x$在$[0,1]$上存在唯一解。</p><p><em>解</em> 存在性：设$g(x):&#x3D;f(x)-x$。$f(0)\geqslant0$及$f(1)\leqslant1$，由介值定理存在性得证。唯一性：若$g(x_1)&#x3D;g(x_2)&#x3D;0$，由$\mathrm{Rolle}$定理，$\exists\xi,\ \mathrm{s.t.}\ f’(\xi)-1&#x3D;g’(\xi)&#x3D;0$，矛盾，于是唯一性得证。</p><hr><p>四、（20分）用有限覆盖定理证明有限区间$[a,b]$上的连续函数一定一致连续。</p><p><em>解</em> $\forall x_0\in[a,b],\ \forall\varepsilon\gt0,\ \exists\delta\gt0,\ \forall|x-x_0|\lt\delta:|f(x)-f(x_0)|\lt\varepsilon$.</p><p>于是$\displaystyle \left\{(x_0-\delta,x_0+\delta):x_0\in[a,b]\right\}$构成$[a,b]$一开覆盖，因而有有限子覆盖$\{S_n\}$。故对任意$x_1,x_2\in[a,b]$，总能找到相邻的$S_{n_1},S_{n_2}\in\{S_n\}$使得$x_1$和$x_2$分别是$S_{n_1}$和$S_{n_2}$的内点。若$\{x_1,x_2\}\subset S_{n_1}\cap S_{n_2}$，则成立$|f(x_1)-f(x_2)|\lt\varepsilon$；若$x_1,x_2\notin S_{n_1}\cap S_{n_2}$，则取$\xi\in S_{n_1}\cap S_{n_2}$，于是$|f(x_1)-f(x_2)|\leqslant|f(x_1)-f(\xi)|+|f(\xi)-f(x_2)|\lt2\varepsilon$。总之，$|f(x_1)-f(x_2)|\lt2\varepsilon$。由$x_1$和$x_2$的任意性，结论得证。</p><hr><p>五、（20分）设可微函数列$\{f_n\}$在$[a,b]$上收敛，$\{f_n’\}$在$[a,b]$上一致有界，证明：$\{f_n\}$在$[a,b]$上一致收敛。</p><p><em>解</em> 设$\displaystyle{M:&#x3D;\sup_{x\in[a,b]}}f_n’(x)$，对任意$\varepsilon\gt0$，取$h\lt\dfrac\varepsilon{4M}$充分小使得$|f_m(a)-f(a)|\lt\varepsilon$，将区间$[a,b]$分成长度为不大于$h$的小区间，同时取$m,n$充分大使得成立$|f_m(a)-f(a)|\lt\dfrac\varepsilon4$对$x\in[a,a+h]$，成立</p><p>$$<br>\begin{align*}<br>|f_m(x)-f_n(x)|&amp;\leqslant|f_m(x)-f_m(a)|+|f_m(a)-f(a)|+|f(a)-f_n(a)|+|f_n(a)-f_n(x)|\\<br>&amp;\lt Mh+\frac\varepsilon4+\frac\varepsilon4+Mh\\<br>&amp;\lt\varepsilon,<br>\end{align*}<br>$$</p><p>对于$x\in[a+h,a+2h]$，当$m$和$n$充分大时成立</p><p>$$<br>\begin{align*}<br>|f_m(x)-f_n(x)|&amp;\leqslant|f_m(x)-f_m(x-h)|+|f_m(x-h)-f(x-h)|+|f(x-h)-f_n(x-h)|+|f_n(x-h)-f_n(x)|\\<br>&amp;\lt Mh+\frac\varepsilon4+\frac\varepsilon4+Mh\\<br>&amp;\lt\varepsilon,<br>\end{align*}<br>$$</p><p>同时递推地对所有小区间均成立。取$m$和$n$大于这所有不等式需要的公共最小值，于是结论得证。</p><hr><p>六、（20分）设$a_n\gt0$，且$\sum a_n$收敛，令$r_n&#x3D;\displaystyle{\sum_{m&#x3D;n}^\infty}a_m$。（1）证明$\sum \dfrac {a_n} {r_n}$发散；（2）证明$\sum\dfrac{a_n}{\sqrt{r_n}}$收敛。</p><p><em>解</em> （1）$\displaystyle{\sum\frac{a_n}{r_n}}&#x3D;\sum\frac{r_n-r_{n+1}}{r_n}&#x3D;\sum\left(1-\frac{r_{n+1}}{r_n}\right)$。由于$\{r_n\}$是单减正数列，所以由$r_n\to0$及$\mathrm{Sapagof}$判别法，结论得证。</p><p>（2）$\displaystyle{\sum\frac{a_n}{\sqrt{r_n}}}\leqslant\sum\int_{r_{n+1}}^{r_{n}}\frac1{\sqrt x}\mathrm dx&#x3D;\int_0^{r_1}\frac{1}{\sqrt x}\mathrm dx$，由反常积分的$p$判别法，结论得证。</p><hr><p>七、（25分）（多元函数没学，跳过）</p>]]></content>
+    
+    
+    <summary type="html">交大2023考研数分</summary>
+    
+    
+    
+    
+    <category term="数分" scheme="https://arielherself.github.io/tags/%E6%95%B0%E5%88%86/"/>
+    
+    <category term="交大" scheme="https://arielherself.github.io/tags/%E4%BA%A4%E5%A4%A7/"/>
+    
+    <category term="考研" scheme="https://arielherself.github.io/tags/%E8%80%83%E7%A0%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>北邮2023考研数分</title>
+    <link href="https://arielherself.github.io/2023/02/10/%E5%8C%97%E9%82%AE2023%E8%80%83%E7%A0%94%E6%95%B0%E5%88%86/"/>
+    <id>https://arielherself.github.io/2023/02/10/%E5%8C%97%E9%82%AE2023%E8%80%83%E7%A0%94%E6%95%B0%E5%88%86/</id>
+    <published>2023-02-10T06:24:27.000Z</published>
+    <updated>2023-02-10T10:13:10.299Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>已知$\displaystyle{\lim_{x\to0}}\frac{\cos2x-\sqrt{\cos2x}}{x^k}&#x3D;a\ (a\ne0)$，求$a$和$k$的值。</li></ol><p>解 $\displaystyle \cos 2x&#x3D;1-2x^2+o(x^2)$，$\displaystyle \sqrt{1+x}&#x3D;\sum_{n&#x3D;0}^\infty\binom {1&#x2F;2} n x^n&#x3D;1+\frac12x+o(x)$，于是</p><p>$$<br>\begin{align*}<br>\frac{\cos2x-\sqrt{\cos2x}}{x^k}&amp;&#x3D;\frac{1-2x^2-1-\dfrac12(-2x^2+o(x^2))+o(x^2)}{x^k}\\<br>&amp;&#x3D;\frac{-x^2+o(x^2)}{x^k},<br>\end{align*}<br>$$</p><p>故$a&#x3D;-1$，$k&#x3D;2$。</p><hr><ol start="2"><li>判断级数$\displaystyle \sum_{n&#x3D;2}^\infty \frac{\ln(e^n+n^2)}{n^2\ln^2 n}$的敛散性。</li></ol><p>解 当$n$充分大时总成立$n^2\lt e^n$。故</p><p>$$<br>\frac{\ln(e^n+n^2)}{n^2\ln^2 n}\lt\frac{\ln2}{n^2\ln^2n}+\frac{1}{n\ln^2n}\lt\frac{1}{n^2}+\frac{1}{n\ln^2n},\quad(*)<br>$$</p><p>$(*)$式第一项构成的级数显然收敛，而对于第二项有估计</p><p>$$<br>\frac1{n\ln^2n}&#x3D;\frac{1&#x2F;n}{\ln^2n}&#x3D;\frac{1&#x2F;n}{\left(1+\dfrac12+\dfrac13+\cdots+\dfrac1n-\gamma+o(1)\right)^2}.<br>$$</p><p>于是$(*)$式第二项构成的级数也收敛。由正项级数的比较判别法，原级数收敛。</p><hr><ol start="3"><li>求$\displaystyle f(x)&#x3D;\frac1{x^2-4x+3}$关于$x-1$的幂级数展开式。</li></ol><p>解 </p><p>$$<br>\begin{align*}<br>f(x)&amp;&#x3D;\frac1{(x-1)(x-3)}&#x3D;\frac1{x-1}\frac{1}{-2-(1-x)}&#x3D;-\frac12\frac1{x-1}\frac{1}{1-\frac{x-1}{2}}\\<br>&amp;&#x3D;-\frac12\frac1{x-1}\sum_{n&#x3D;0}^\infty\left(\frac{x-1}2\right)^n&#x3D;-\sum_{n&#x3D;0}^\infty\left(\frac12\right)^{n+1}(x-1)^{n-1}.<br>\end{align*}<br>$$</p><hr><ol start="4"><li>已知$f(x)$在$(-\infty,+\infty)$上二阶可导，且$f’’(x)\leqslant0$，$\displaystyle \lim_{x\to0}\frac{f(x)}{2x}&#x3D;2$，证明：$f(x)\leqslant4x$。</li></ol><p>解 由题设中极限成立，知$f(0)&#x3D;0$及$f’(0)&#x3D;4$。故</p><p>$$<br>f(x)&#x3D;f(0)+f’(0)\cdot x+\frac{f’’(\xi)}2x^2\leqslant4x.<br>$$</p><hr><ol start="5"><li>已知$\displaystyle F(x)&#x3D;\int_0^x(x-2t)f(t)\mathrm dt$.（1）若$f(x)$为偶函数，证明$F(x)$也是偶函数；（2）若$f(x)$单调不增，证明$F(x)$单调不减。</li></ol><p>解 （1）$\displaystyle F(-x)&#x3D;\int_0^{-x}(-x-2t)f(t)\mathrm dt&#x3D;-\int_0^x(-x+2u)f(-u)\mathrm du&#x3D;\int_0^x(x-2u)f(u)\mathrm du&#x3D;F(x).$</p><p>（2）对任意$x\in\mathbb{R}$，当$0\lt h\lt x$时</p><p>$$<br>\begin{align*}<br>F(x+h)-F(x)&amp;&#x3D;\int_0^{x+h}(x+h-2t)f(t)\mathrm dt-\int_0^x(x-2t)f(t)\mathrm dt\\<br>&amp;&#x3D;\int_x^{x+h}(x+h-2t)f(t)\mathrm dt+\int_0^{x}hf(t)\mathrm dt\\<br>&amp;\geqslant f(x)\left.\left(-\frac14(x+h-2t)^2\right)\right|_x^{x+h}+hxf(x)\\<br>&amp;\geqslant -hxf(x)+hxf(x)&#x3D;0.<br>\end{align*}<br>$$</p><p>当$h\geqslant x$时，设$\displaystyle N:&#x3D;\left[\frac {2h}{x}\right]$，于是</p><p>$$<br>F(x+h)-F(x)&#x3D;(F(1.5x)-F(x))+(F(2x)-F(1.5x))+\cdots+\left(F(x+h)-F\left(x+\frac N2x\right)\right)\geqslant0.<br>$$</p><hr><ol start="6"><li>（多元函数没学，跳过）</li></ol><hr><ol start="7"><li>（多元函数没学，跳过）</li></ol><hr><ol start="8"><li>（多元函数没学，跳过）</li></ol><hr><ol start="9"><li>设$S$为有界集，且$\sup S&#x3D;a\notin S$。证明：存在递增的数列$\{x_n\}\subseteq S$，使得$\displaystyle \lim_{n\to\infty}x_n&#x3D;a$。</li></ol><p>解 $\forall\varepsilon\gt0,\ \exists x\in S,\ \mathrm{s.t.}\ a-\varepsilon\lt x\leqslant a$。取$\varepsilon_1:&#x3D;1$，得$x_1$；再取$\varepsilon_2:&#x3D;\min \{\varepsilon_1&#x2F;2,a-x_1\}$，得$x_2$；以此类推，取$\varepsilon_n:&#x3D;\min\{\varepsilon_{n-1}&#x2F;2,a-x_{n-1}\}$，得$x_n$。所得$\{x_n\}$单调$\nearrow$，且满足$\displaystyle a-\frac1{2^{n-1}}\lt x_n\leqslant a$。两边取极限，由迫敛性结论得证。</p><hr><ol start="10"><li>已知数列$\{x_n\}$无界但不是无穷大量，证明：$\{x_n\}$存在子列收敛，也存在子列为无穷大量。</li></ol><p>解 $\exists G\gt0,\ \forall N\gt0,\ \exists n\gt N,\ \mathrm{s.t.}\ |a_n|\leqslant G$。由此取得$\{x_n\}$一有界子列，由致密性原理（$\mathrm{Bolzano-Weierstrass}$定理），其存在收敛子列。</p><p>又根据$\{x_n\}$无界，取$x_{n_1}\gt1$，$x_{n_2}\gt\max\{x_{n_1},2\}$，以此类推，$x_{n_k}\gt\max\{x_{n_{k-1}},k\}$，则$\{x_{n_k}\}$即为一无穷大量。</p><hr><ol start="11"><li>已知$0\lt a\lt b\lt 1$，证明$\arctan b-\arctan a\lt\dfrac{b-a}{2ab}$。</li></ol><p>解 由$\mathrm{Cauchy}$中值定理，$\dfrac{\arctan b-\arctan a}{\dfrac1a-\dfrac1b}&#x3D;\dfrac{\xi^2}{\xi^2+1}\lt\dfrac12.$</p><hr><ol start="12"><li>（多元函数没学，跳过）</li></ol><hr><ol start="13"><li>讨论函数列$f_n(x)&#x3D;\dfrac{nx}{1+n^2x^2}$在$(-\infty,+\infty)$上的一致收敛性。</li></ol><p>解 显然$\forall x\in\mathbb{R}:f_n(x)\to0$。由$\displaystyle f_n\left(\frac1n\right)&#x3D;\frac12\not\to0$，所以$\{f_n\}$在$\mathbb{R}$上不一致收敛。</p><hr><ol start="14"><li>已知$f(x)$在$(0,1]$上可导，且极限$\displaystyle \lim_{x\to0+}\sqrt xf’(x)$存在。证明：$f(x)$在$(0,1]$上一致连续。</li></ol><p>解 若$\displaystyle \lim_{x\to0+}\sqrt xf’(x)&#x3D;:t\neq0$，则$\exists\delta’\gt0,\ \forall x\in(0,\delta’):\sqrt x|f’(x)|\lt2|t|$。对任意充分小$\varepsilon\gt0$，记$\varepsilon’:&#x3D;\varepsilon^2$。取$\delta_1:&#x3D;\min\{\varepsilon’,\delta’\}$，则$\forall x_1,x_2\in(0,\delta_1):|f(x_1)-f(x_2)|\lt2|t|\sqrt{\varepsilon’}&#x3D;2|t|\varepsilon$。又由$\mathrm{Cantor}$定理，$f$在$[\delta_1,1]$上一致连续，故$\exists\delta_2\gt0,\ \forall x_1,x_2\in[\delta_1,1],|x_1-x_2|\lt\delta_2:|f(x_1)-f(x_2)|\lt\varepsilon$。取$\delta:&#x3D;\min\{\delta_1,\delta_2\}$，则$\forall x_1,x_2\in(0,1],|x_1-x_2|\lt\delta:|f(x_1)-f(x_2)|\lt M\varepsilon$。对于$t&#x3D;0$的情况，用$1$作为上界替代$t$，结论依然成立。故结论得证。</p><hr><ol start="15"><li><p>已知$f_n(x)&#x3D;x^n+x,n&#x3D;1,2,\cdots.$</p><p>（1）证明：方程$f_n(x)&#x3D;1$在$\left[\dfrac12,1\right]$上有且仅有一个解$x_n$。</p><p>（2）证明：$\{x_n\}$极限存在，并求$\displaystyle \lim_{n\to\infty}x_n$。</p></li></ol><p>解 （1）存在性：$f_n(0)&#x3D;0\lt1,\ f_n(1)&#x3D;2\gt 1$，由介值定理存在解$x$。唯一性：若$f_n(x_1)&#x3D;f_n(x_2)&#x3D;1$，则$\exists\xi\in(x_1,x_2),\ \mathrm{s.t.}\ f_n’(\xi)&#x3D;n\xi^{n-1}+1&#x3D;0$，不可能，所以解唯一。综上，$\forall n,\ \exists!x_n:f_n(x_n)&#x3D;1.$</p><p>（2）由于$f_{n+1}(x)\leqslant f_n(x)$，所以$f_n(x_n)&#x3D;1&#x3D;f_{n+1}(x_{n+1})\leqslant f_n(x_{n+1})$，由$f_n$关于$x$单增知$x_n\leqslant x_{n+1}$，于是$\{x_n\}$单调$\nearrow\leqslant1$，收敛。由于$f_n(x)\to f(x):&#x3D;x$，以及$|f_n(x)-f(x)|&#x3D;x^n\leqslant x_1^n\to0$，所以知$f_n(x)\rightrightarrows f(x)$在$[0,x_1]$上。于是得</p><p>$$<br>\lim_{n\to\infty}x_n&#x3D;\lim_{n\to\infty}f(x_n)&#x3D;\lim_{n\to\infty}f_n(x_n)&#x3D;1.<br>$$</p>]]></content>
+    
+    
+    <summary type="html">北邮2023考研数分</summary>
+    
+    
+    
+    
+    <category term="数分" scheme="https://arielherself.github.io/tags/%E6%95%B0%E5%88%86/"/>
+    
+    <category term="考研" scheme="https://arielherself.github.io/tags/%E8%80%83%E7%A0%94/"/>
+    
+    <category term="北邮" scheme="https://arielherself.github.io/tags/%E5%8C%97%E9%82%AE/"/>
+    
+  </entry>
+  
+</feed>
