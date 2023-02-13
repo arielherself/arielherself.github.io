@@ -6,7 +6,7 @@
   <link href="https://arielherself.github.io/atom.xml" rel="self"/>
   
   <link href="https://arielherself.github.io/"/>
-  <updated>2023-02-13T06:55:07.505Z</updated>
+  <updated>2023-02-13T14:24:35.083Z</updated>
   <id>https://arielherself.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>永远不会做的题：积分不等式</title>
+    <link href="https://arielherself.github.io/2023/02/13/%E6%B0%B8%E8%BF%9C%E4%B8%8D%E4%BC%9A%E5%81%9A%E7%9A%84%E9%A2%98%EF%BC%9A%E7%A7%AF%E5%88%86%E4%B8%8D%E7%AD%89%E5%BC%8F/"/>
+    <id>https://arielherself.github.io/2023/02/13/%E6%B0%B8%E8%BF%9C%E4%B8%8D%E4%BC%9A%E5%81%9A%E7%9A%84%E9%A2%98%EF%BC%9A%E7%A7%AF%E5%88%86%E4%B8%8D%E7%AD%89%E5%BC%8F/</id>
+    <published>2023-02-13T14:01:12.000Z</published>
+    <updated>2023-02-13T14:24:35.083Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>南开大学</strong> $f(x)$在$[0,+\infty)$上连续、单调递减，$\displaystyle \int_0^{+\infty}x^3f(x)\mathrm dx$收敛。证明：</p><p>$$<br>\left(\int_0^{+\infty}x^2f(x)\mathrm dx\right)^2\leqslant\frac89\int_0^{+\infty}xf(x)\mathrm dx\int_0^{+\infty}x^3f(x)\mathrm dx.<br>$$</p><p><img src="https://mmbiz.qpic.cn/mmbiz_png/127ib73d0Jia36XLnlVPNhaibllibHFe1nez9ycjz3qvyaEKfoUYtSQZJ50NACq8zibtOeywAySuEtmzU3LwC0Vic1bg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1"></p><p><img src="https://mmbiz.qpic.cn/mmbiz_png/127ib73d0Jia36XLnlVPNhaibllibHFe1nez4zgMEwvYJQWS8vBLvnFY57shPClwCAqGvhicwuOZ2GYibo2Q01Kvj0AA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1"></p><p><img src="https://mmbiz.qpic.cn/mmbiz_png/127ib73d0Jia36XLnlVPNhaibllibHFe1nez9Sic5bEO10icvTO6tqbo653NsictlrvzFuSYXcg8wdjibZWnQCicxrYD6AA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1"></p><hr><p><strong>大连理工大学</strong> 设$f(x)$在$[0,1]$上连续，$\displaystyle \int_0^1f(x)\mathrm dx&#x3D;0$。求证：</p><p>$$<br>\left(\int_0^1xf(x)\mathrm dx\right)^2\leqslant\frac1{12}\int_0^1f^2(x)\mathrm dx.<br>$$</p><p><img src="https://mmbiz.qpic.cn/mmbiz_png/127ib73d0Jia1PrL4tOQNm2D7GMwP8RhMQk98VzfGe9XQmaZkINicMsbsEJBZpH7JOlL3CBic1dNs0CPzibFG5PicJ0w/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1"></p><hr><p><strong>中国人民大学</strong> $p(x)$在$[a,b]$非负且连续，$f(x),g(x)$在$[a,b]$上连续、单调递增。证：</p><p>$$<br>\int_a^bp(x)f(x)\mathrm dx\int_a^bp(x)g(x)\mathrm dx\leqslant\int_a^bp(x)\mathrm dx\int_a^bp(x)f(x)g(x)\mathrm dx.<br>$$</p><p>答案：</p><p><img src="https://mmbiz.qpic.cn/mmbiz_png/127ib73d0Jia3VqWWapKBUTIwFq78LNUPl7IuCcy3yp3fpYMKVVe5uMrjrwA3mlAe9SiaAk4RFrdaK228d2aVMhNw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1"></p><p><img src="https://mmbiz.qpic.cn/mmbiz_png/127ib73d0Jia3VqWWapKBUTIwFq78LNUPlFXSKAiaHbs8hubeGIFdvcwjwicWvVUYa3DcB3JH8YJfzDxPhibibWpctpQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1"></p><hr><p><strong>上海财经大学</strong> 设$f(x)$在$[0,1]$可微，$0\lt f’(x)\lt1$，且$f(0)&#x3D;0$。证明：对任意的$a\in(0,1)$有</p><p>$$<br>\left(\int_0^af(x)\mathrm dx\right)^2\gt\int_0^af^3(x)\mathrm dx.<br>$$</p><p>答案：</p><p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/B183vl9ibpHZcKLcp3jsCT5ibsxzibEJzjaRPVCVyjd3hLqzgeKe53NgxX9Y1FEFA8IcGnMmKeGdOaicNyPXR7Nribg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1"></p>]]></content>
+    
+    
+    <summary type="html">整理2023年各校考研中出现的积分不等式。</summary>
+    
+    
+    
+    
+    <category term="数分" scheme="https://arielherself.github.io/tags/%E6%95%B0%E5%88%86/"/>
+    
+    <category term="考研" scheme="https://arielherself.github.io/tags/%E8%80%83%E7%A0%94/"/>
+    
+  </entry>
   
   <entry>
     <title>美国数学月刊P12220</title>
