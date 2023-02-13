@@ -6,7 +6,7 @@
   <link href="https://arielherself.github.io/atom.xml" rel="self"/>
   
   <link href="https://arielherself.github.io/"/>
-  <updated>2023-02-12T12:00:47.425Z</updated>
+  <updated>2023-02-13T06:55:07.505Z</updated>
   <id>https://arielherself.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>美国数学月刊P12220</title>
+    <link href="https://arielherself.github.io/2023/02/13/%E7%BE%8E%E5%9B%BD%E6%95%B0%E5%AD%A6%E6%9C%88%E5%88%8AP12220/"/>
+    <id>https://arielherself.github.io/2023/02/13/%E7%BE%8E%E5%9B%BD%E6%95%B0%E5%AD%A6%E6%9C%88%E5%88%8AP12220/</id>
+    <published>2023-02-13T06:38:10.000Z</published>
+    <updated>2023-02-13T06:55:07.505Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>12220.</strong> Let $a_n&#x3D;\sum_{k&#x3D;1}^n 1&#x2F;k^2$ and $b_n&#x3D;\sum_{k&#x3D;1}^n 1&#x2F;(2k-1)^2$. Prove</p><p>$$<br>\lim_{n\to\infty} n\left(\frac{b_n}{a_n}-\frac34\right)&#x3D;\frac3{\pi^2}.<br>$$</p><hr><p>证 由</p><p>$$<br>\frac14a_n+b_n&#x3D;\sum_{k&#x3D;1}^n\left(\frac1{(2k)^2}+\frac1{(2k+1)^2}\right)&#x3D;a_{2n}<br>$$</p><p>得</p><p>$$<br>\begin{align*}<br>n\left(\frac{b_n}{a_n}-\frac34\right)&amp;&#x3D;n\cdot\frac{a_{2n}-a_n}{a_n}&#x3D;\frac{n\sum_{k&#x3D;n+1}^{2n}1&#x2F;k^2}{\sum_{k&#x3D;1}^n1&#x2F;k^2}\\<br>&amp;&#x3D;\frac{n\sum_{k&#x3D;1}^{n}1&#x2F;(k+n)^2}{\sum_{k&#x3D;1}^n1&#x2F;k^2}&#x3D;\frac{\sum_{k&#x3D;1}^{n}1&#x2F;\left(\frac kn+1\right)^2\cdot1&#x2F;n}{\sum_{k&#x3D;1}^n1&#x2F;k^2}\\<br>&amp;\to\frac{\int_0^11&#x2F;(1+x)^2\mathrm dx}{\sum_{k&#x3D;1}^\infty1&#x2F;k^2}&#x3D;\frac{1&#x2F;2}{\pi^2&#x2F;6}&#x3D;\frac3{\pi^2}.\square<br>\end{align*}<br>$$</p><hr><p><strong>另见</strong></p><p>    裴礼文例5.3.28。</p><p><em>DOI: 10.1080&#x2F;00029890.2020.1822718</em></p>]]></content>
+    
+    
+    <summary type="html">一道数项级数的综合问题。</summary>
+    
+    
+    
+    
+    <category term="数分" scheme="https://arielherself.github.io/tags/%E6%95%B0%E5%88%86/"/>
+    
+    <category term="AMM" scheme="https://arielherself.github.io/tags/AMM/"/>
+    
+  </entry>
   
   <entry>
     <title>陈纪修习题11.2</title>
