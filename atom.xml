@@ -6,7 +6,7 @@
   <link href="https://arielherself.github.io/atom.xml" rel="self"/>
   
   <link href="https://arielherself.github.io/"/>
-  <updated>2023-02-13T14:24:35.083Z</updated>
+  <updated>2023-02-15T11:50:54.613Z</updated>
   <id>https://arielherself.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>多元函数极限的结论</title>
+    <link href="https://arielherself.github.io/2023/02/15/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E7%BB%93%E8%AE%BA/"/>
+    <id>https://arielherself.github.io/2023/02/15/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E7%BB%93%E8%AE%BA/</id>
+    <published>2023-02-15T10:57:22.000Z</published>
+    <updated>2023-02-15T11:50:54.613Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>命题1 (Heine)</strong> 设$\boldsymbol x_0\in\mathbb R^n$，$f:U^\circ(\boldsymbol x_0,\delta_0)\to\mathbb R$，则$\displaystyle \lim_{\boldsymbol x\to\boldsymbol x_0}f(\boldsymbol x)\overset{\exists}{&#x3D;}L$的充要条件是对任意$U^\circ(\boldsymbol x_0,\delta_0)\supset\{\boldsymbol x_n\}\to\boldsymbol x_0$，成立$\displaystyle\lim_{n\to\infty}f(\boldsymbol x_n)\overset\exists&#x3D;L$。</p><p>证明与$\mathrm{Heine}$定理的证明过程完全相同，从略。</p><hr><p><strong>推论1</strong> 设$x_0\in\mathbb R^n$，$f:U^\circ(\boldsymbol x_0,\delta_0)\to\mathbb R$，则$f$在$\boldsymbol x_0$处收敛的充要条件是对任意$U^\circ(\boldsymbol x_0,\delta_0)\supset\{\boldsymbol x_n\}\to\boldsymbol x_0$，$\{f(\boldsymbol x_n)\}$收敛。</p><p>证 必要性由命题1易得。充分性：假设符合条件的两$\{f(\boldsymbol x_n)\}$和$\{f(\boldsymbol y_n)\}$收敛于不同极限$L_1\ne L_2$，定义新数列</p><p>$$<br>\boldsymbol z_n:&#x3D;\begin{cases}\boldsymbol x_n,\qquad &amp;n&#x3D;2k-1\\\boldsymbol y_n.\qquad &amp;n&#x3D;2k\end{cases},<br>$$</p><p>于是$\{\boldsymbol z_n\}\to\boldsymbol x_0$，但$\{f(\boldsymbol z_n)\}$极限不存在，矛盾。$\square$</p><hr><p><strong>命题2 (Cauchy)</strong> 设$\boldsymbol x_0\in\mathbb R^n$，$f:U^\circ(\boldsymbol x_0,\delta_0)\to\mathbb R$，则$f$在$\boldsymbol x_0$处收敛的充要条件是成立：</p><p>$$<br>\forall\varepsilon\gt0,\ \exists\delta\gt0,\ \forall \rho(\boldsymbol x_1,\boldsymbol x_2)\in(0,\delta):\rho(f(\boldsymbol x_1),f(\boldsymbol x_2))\lt\varepsilon.<br>$$</p><p>证1 必要性：因为$f$在$\boldsymbol x_0$收敛，所以</p><p>$$<br>\forall\varepsilon\gt0, \ \exists\delta\gt0,\ \forall \rho(\boldsymbol x, \boldsymbol x_0)\lt\delta:\rho(f(\boldsymbol x),f(\boldsymbol x_0))\lt\varepsilon&#x2F;2,<br>$$</p><p>于是</p><p>$$<br>\rho(f(\boldsymbol x_1),f(\boldsymbol x_2))\leqslant\rho(f(\boldsymbol x_1),f(\boldsymbol x_0))+\rho(f(\boldsymbol x_2),f(\boldsymbol x_0))\lt\varepsilon.<br>$$</p><p>充分性：对每个$\{\boldsymbol x_n\}\to\boldsymbol x_0$，当$n$充分大时满足条件，因而$\{f(\boldsymbol x_n)\}$是$\mathrm{Cauchy}$数列，由推论1，结论得证。$\square$</p><p>证2 必要性同证1。充分性：设</p><p>$$<br>m(\delta):&#x3D;\inf\{f(\boldsymbol x):\boldsymbol x\in U^\circ(\boldsymbol x_0,\delta)\},\\<br>M(\delta):&#x3D;\sup\{f(\boldsymbol x):\boldsymbol x\in U^\circ(\boldsymbol x_0,\delta)\}.<br>$$</p><p>由</p><p>$$<br>|f(\boldsymbol x_1)-f(\boldsymbol x_2)|\lt\varepsilon\Rightarrow<br>0\leqslant M(\delta)-m(\delta)\leqslant\varepsilon,<br>$$</p><p>取一列$\{\delta_n\}\searrow0$，由致密性原理存在</p><p>$$<br>\lim_{n\to\infty}m(\delta_n)&#x3D;L&#x3D;\lim_{n\to\infty}M(\delta_n).<br>$$</p><p>故成立</p><p>$$<br>|f(\boldsymbol x_1)-f(\boldsymbol x_2)|\lt\varepsilon\Rightarrow f(\boldsymbol x)\leqslant m(\delta_0)+\varepsilon\leqslant m(\delta_n)+\varepsilon,<br>$$</p><p>式两侧关于$n$取极限即得$f(\boldsymbol x)\leqslant L+\varepsilon$。同理得$f(\boldsymbol x)\geqslant L-\varepsilon$，于是</p><p>$$<br>\lim_{\boldsymbol x\to\boldsymbol x_0}f(\boldsymbol x)&#x3D;L.<br>$$</p><p>结论得证。$\square$</p><hr><p><strong>裴礼文例6.1.32</strong> 设$f(\boldsymbol x)$在$\mathbb R^n$中的有界开区域$D$内连续。试证：$f(\boldsymbol x)$在$D$内一致连续的充要条件是$\forall \boldsymbol x_0\in\partial D$，$\displaystyle\lim\limits_{\boldsymbol x\to \boldsymbol x_0\atop \boldsymbol y\to\boldsymbol y_0}f(\boldsymbol x)$存在。</p><p>证 充分性：可将函数连续延拓至闭区域$\overline D$，再使用多元函数一致连续的$\mathrm {Cantor}$定理即可。</p><p>必要性：每个边界点处满足命题2条件，因此极限存在。$\square$</p><hr><p><strong>另见</strong></p><ol><li><p>谢惠民命题4.2.4；</p></li><li><p>陈纪修习题11.3.8。</p></li></ol>]]></content>
+    
+    
+    <summary type="html">Cauchy收敛原理与Heine归结原理在多元函数的推广。</summary>
+    
+    
+    
+    
+    <category term="数分" scheme="https://arielherself.github.io/tags/%E6%95%B0%E5%88%86/"/>
+    
+  </entry>
   
   <entry>
     <title>永远不会做的题：积分不等式</title>
