@@ -6,7 +6,7 @@
   <link href="https://arielherself.github.io/atom.xml" rel="self"/>
   
   <link href="https://arielherself.github.io/"/>
-  <updated>2023-02-15T11:50:54.613Z</updated>
+  <updated>2023-02-18T13:27:04.397Z</updated>
   <id>https://arielherself.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>极坐标的全微分形式</title>
+    <link href="https://arielherself.github.io/2023/02/18/%E6%9E%81%E5%9D%90%E6%A0%87%E7%9A%84%E5%85%A8%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F/"/>
+    <id>https://arielherself.github.io/2023/02/18/%E6%9E%81%E5%9D%90%E6%A0%87%E7%9A%84%E5%85%A8%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F/</id>
+    <published>2023-02-18T13:04:20.000Z</published>
+    <updated>2023-02-18T13:27:04.397Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>命题</strong> 设函数$f:\mathbb R^2\to\mathbb R$可微，则对于$r:&#x3D;\sqrt{x^2+y^2}$和$\theta:&#x3D;\arctan\dfrac yx$成立</p><p>$$<br>\begin{cases}<br>\mathrm dr&#x3D;\dfrac{x\mathrm dx+y\mathrm dy}r\\<br>\mathrm d\theta&#x3D;\dfrac{x\mathrm dy-y\mathrm dx}{r^2}<br>\end{cases}.<br>$$</p><hr><p><strong>陈纪修习题12.2.13</strong> 设$z&#x3D;u^v$，$u&#x3D;\ln\sqrt{x^2+y^2}$，$v&#x3D;\arctan \dfrac yx$，求$\mathrm dz$。</p><p>解 </p><p>$$<br>\mathrm dz&#x3D;\frac{\partial z}{\partial u}\mathrm du+\frac{\partial z}{\partial v}\mathrm dv&#x3D;vu^{v-1}\frac1r\frac{x\mathrm dx+y\mathrm dy}r+u^v\ln u\cdot\frac{x\mathrm dy-y\mathrm dx}{r^2}.\ \square<br>$$</p><hr><p><strong>陈纪修习题12.2.14</strong> 设$z&#x3D;(x^2+y^2)e^{-\arctan\frac yx}$，求$\mathrm dz$。</p><p>解</p><p>$$<br>\begin{align*}<br>\mathrm dz &amp;&#x3D; \mathrm d(r^2e^{-\theta})&#x3D;r^2(-e^{-\theta})\mathrm d\theta+e^{-\theta}2r\mathrm dr\\<br>&amp;&#x3D;e^{-\theta}(2r\mathrm dr-r^2\mathrm d\theta)&#x3D;e^{-\theta}(2x\mathrm dx+2y\mathrm dy-x\mathrm dy+y\mathrm dx).\ \square<br>\end{align*}<br>$$</p><hr><p><strong>陈纪修习题12.2.17</strong> 设$z&#x3D;f(x,y)$在全平面上有定义，具有连续的偏导数，且满足方程</p><p>$$<br>xf_x(x,y)+yf_y(x,y)&#x3D;0,<br>$$</p><p>证明：$f(x,y)$为常数。</p><p>证 </p><p>$$<br>f_x(x,y) &#x3D; \frac{\partial f}{\partial r}\frac{\partial r}{\partial x}+\frac{\partial f}{\partial \theta}\frac{\partial \theta}{\partial x}&#x3D;\frac{\partial f}{\partial r}\frac xr-\frac{\partial f}{\partial \theta}\frac y{r^2},\\<br>f_y(x,y) &#x3D; \frac{\partial f}{\partial r}\frac{\partial r}{\partial y}+\frac{\partial f}{\partial \theta}\frac{\partial \theta}{\partial y}&#x3D;\frac{\partial f}{\partial r}\frac yr+\frac{\partial f}{\partial \theta}\frac x{r^2}.<br>$$</p><p>于是</p><p>$$<br>0&#x3D;xf_x(x,y)+yf_y(x,y)&#x3D;r\frac{\partial f}{\partial r},<br>$$</p><p>故$\dfrac{\partial f}{\partial r}\equiv0$，进而$\dfrac{\partial f}{\partial \theta}\equiv0$。$\square$</p>]]></content>
+    
+    
+    <summary type="html">一个能够大幅简化部分题解题过程的技巧。</summary>
+    
+    
+    
+    
+    <category term="数分" scheme="https://arielherself.github.io/tags/%E6%95%B0%E5%88%86/"/>
+    
+  </entry>
   
   <entry>
     <title>多元函数极限的结论</title>
